@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hà Hoàng Anh - Trang Web Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ddd 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .links a {
+            display: block;
+            margin: 5px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .hobbies ol {
+            padding-left: 20px;
+        }
+        .hobbies ol li {
+            background: #eee;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .grades {
+            margin-top: 20px;
+        }
+        .grades table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .grades table, .grades th, .grades td {
+            border: 1px solid #ddd;
+        }
+        .grades th, .grades td {
+            padding: 10px;
+            text-align: center;
+        }
+        .grades th {
+            background: #333;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function showGrade(subject, grade) {
+            alert('Điểm ' + subject + ': ' + grade);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Chào mừng đến với trang web lỏ đầu tiên của mình </h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <section class="section links">
+                <h2>Xin chào mình là Hoang Anh.Thật vui và may mắn khi được gia vào Hit-web-public-2024</h2>
+               
+            </section>
+            <section class="section">
+                <h2>Đôi chút về tớ</h2>
+                <ul>
+                    <li><strong>Họ Tên:</strong> Hà Hoàng Anh</li>
+                    <li><strong>Quê quán:</strong> Thanh Hóa</li>
+                    <li><strong>Lớp:</strong> CNTT04</li>
+                    <li><strong>Khoa:</strong> K17</li>
+                    <li><strong>Ngành:</strong> CNTT</li>
+                </ul>
+            </section>
+            <section class="section links">
+                <h2>Tớ không có crush nhưng cứ click vào đây nhé : </h2>
+                <a href="https://www.facebook.com/BoysTp2004" target="_blank">Ở đây này !</a>
+               
+            </section>
+            <section class="section links">
+                <h2>Liên hệ với tớ</h2>
+                <a href="https://www.facebook.com/BoysTp2004" target="_blank">Facebook: Hà Hoàng Anh</a>
+                <a href="https://www.instagram.com/hoangganhh_04/" target="_blank">Instagram: Hà Hoàng Anh</a>
+            </section>
+
+            <section class="section hobbies">
+                <h2>Sở thích của tớ</h2>
+                <ol>
+                    <li>Ăn uống</li>
+                    <li>Đi chơi</li>
+                    <li>Thể thao</li>
+                    <li>Coding</li>
+                </ol>
+            </section>
+
+            <section class="section grades">
+                <h2>Điểm số</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Môn</th>
+                            <th>Điểm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Toán</td>
+                            <td><a href="#" onclick="showGrade('Toán', 8); return false;">Click để xem</a></td>
+                        </tr>
+                        <tr>
+                            <td>Văn</td>
+                            <td><a href="#" onclick="showGrade('Văn', 8); return false;">Click để xem</a></td>
+                        </tr>
+                        <tr>
+                            <td>Anh</td>
+                            <td><a href="#" onclick="showGrade('Anh', 8); return false;">Click để xem</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="section">
+                <h2>Thông báo</h2>
+                <p>Bài tập về nhà tuần 1 của mình đã hoàn thành và đã đưa lên Github. Tớ sẽ cập nhật các bài tập tiếp theo vào Github cùng với các bài tập của các anh chị. Hẹn gặp lại các cậu ở tuần sau nhé!!!</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
